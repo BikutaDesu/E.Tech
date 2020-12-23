@@ -13,7 +13,7 @@ public class AppiumRobot extends BaseTest{
         //driverWait.until(ExpectedConditions.textToBePresentInElement(driver.findElement(By.xpath("//android.widget.TextView[@text='"+texto+"']")), texto));
 
         try {
-            Thread.sleep(2000);
+            Thread.sleep(5000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
