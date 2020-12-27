@@ -25,4 +25,5 @@ public class SeuBarrigaNativoPage {
     public MobileElement getTxtSenha() {
         return txtSenha;
     }
+
 }
