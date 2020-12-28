@@ -22,7 +22,7 @@
       Quando toco no botão "Cadastrar"
       Entao visualizo a mensagem na view "Endereço de email já utilizado"
 
-    @mobile @seuBarrigaHibrido
+    @mobile
     Cenario: Login com usuário existente
       Dado que esteja na aplicação
       E toco no botão "SeuBarriga Híbrido"
@@ -30,3 +30,12 @@
       E preencho os dados de login "victor@teste.com", "123456"
       Quando toco no botão "Entrar"
       Entao visualizo a mensagem na view "Seu Barriga. Nunca mais esqueça de pagar o aluguel."
+
+    @mobile @seuBarrigaHibrido
+    Cenario: Login com usuário não existente
+      Dado que esteja na aplicação
+      E toco no botão "SeuBarriga Híbrido"
+      E seleciono a opção de login
+      E preencho os dados de login "victor123teste@teste.com", "123456"
+      Quando toco no botão "Entrar"
+      Entao visualizo a mensagem na view "Problemas com o login do usuário"
