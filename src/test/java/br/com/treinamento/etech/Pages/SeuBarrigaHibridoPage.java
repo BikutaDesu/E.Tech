@@ -8,10 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SeuBarrigaHibridoPage {
 
-    public SeuBarrigaHibridoPage(AppiumDriver<MobileElement> driver) {
-        PageFactory.initElements(new AppiumFieldDecorator(driver), this);
-    }
-
     @AndroidFindBy(xpath = "//android.view.View[@text='Novo usuário?']")
     private MobileElement btnNovoUsuario;
 
@@ -26,6 +22,10 @@ public class SeuBarrigaHibridoPage {
 
     @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='email']")
     private MobileElement txtEmail;
+
+    public SeuBarrigaHibridoPage(AppiumDriver<MobileElement> driver) {
+        PageFactory.initElements(new AppiumFieldDecorator(driver), this);
+    }
 
     public MobileElement getTxtNome() {
         return txtNome;

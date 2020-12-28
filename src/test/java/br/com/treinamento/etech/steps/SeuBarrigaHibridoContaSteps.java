@@ -4,7 +4,6 @@ import br.com.treinamento.etech.Funcionalidade.HomeFuncionalidade;
 import br.com.treinamento.etech.Funcionalidade.SeuBarrigaHibridoContaFuncionalidade;
 import br.com.treinamento.etech.Funcionalidade.SeuBarrigaHibridoFuncionalidade;
 import br.com.treinamento.etech.commons.AppiumRobot;
-import cucumber.api.PendingException;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.E;
 import cucumber.api.java.pt.Quando;

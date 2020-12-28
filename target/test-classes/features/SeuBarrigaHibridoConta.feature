@@ -15,7 +15,7 @@
       E toco na view Adicionar
       E preencho o campo texto com "Victor"
       E toco no botão "Salvar"
-      E visualizo a mensagem na view "Conta adicionada com sucesso!"
+      Então visualizo a mensagem na view "Conta adicionada com sucesso!"
 
     @mobile
     Cenario: Adicionar existente conta
@@ -23,10 +23,10 @@
       E toco na view Adicionar
       E preencho o campo texto com "Teste"
       E toco no botão "Salvar"
-      E visualizo a mensagem na view "Já existe uma conta com esse nome!"
+      Então visualizo a mensagem na view "Já existe uma conta com esse nome!"
 
     @mobile @seuBarrigaHibridoConta
     Cenario: Listar contas
       Quando toco no spinner contas
       E toco na view Listar
-      E visualizo a mensagem na view "Conta"
+      Então visualizo a mensagem na view "Conta"
