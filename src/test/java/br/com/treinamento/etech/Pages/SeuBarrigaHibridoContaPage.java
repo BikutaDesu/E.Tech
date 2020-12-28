@@ -21,6 +21,10 @@ public class SeuBarrigaHibridoContaPage {
     @AndroidFindBy(xpath ="//android.view.View[@text='Adicionar']")
     private MobileElement btnAdicionar;
 
+
+    @AndroidFindBy(xpath ="//android.view.View[@text='Listar']")
+    private MobileElement btnListar;
+
     public MobileElement getSpinnerContas() {
         return spinnerContas;
     }
@@ -31,5 +35,9 @@ public class SeuBarrigaHibridoContaPage {
 
     public MobileElement getBtnAdicionar() {
         return btnAdicionar;
+    }
+
+    public MobileElement getBtnListar() {
+        return btnListar;
     }
 }

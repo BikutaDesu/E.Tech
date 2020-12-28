@@ -45,4 +45,9 @@ public class SeuBarrigaHibridoContaSteps {
     public void preenchoOCampoTextoCom(String texto) {
         this.seuBarrigaHibridoContaFuncionalidade.preencherCampoNome(texto);
     }
+
+    @E("^toco na view Listar$")
+    public void tocoNaViewListar() {
+        this.seuBarrigaHibridoContaFuncionalidade.tocarEmListar();
+    }
 }

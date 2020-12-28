@@ -28,4 +28,8 @@ public class SeuBarrigaHibridoContaFuncionalidade extends BaseTest {
     public void tocarEmAdicionar() {
         this.seuBarrigaHibridoContaPage.getBtnAdicionar().click();
     }
+
+    public void tocarEmListar() {
+        this.seuBarrigaHibridoContaPage.getBtnListar().click();
+    }
 }
