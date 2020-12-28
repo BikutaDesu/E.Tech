@@ -34,8 +34,20 @@ public class SeuBarrigaHibridoSteps {
         this.seuBarrigaHibridoFuncionalidade.tocarBotaoNovoUsuario();
     }
 
+    @E("^seleciono a opção de login$")
+    public void selecionoAOpçãoDeLogin() {
+        this.seuBarrigaHibridoFuncionalidade.tocarBotaoLogin();
+    }
+
     @Entao("^visualizo a mensagem na view \"([^\"]*)\"$")
     public void visualizoAMensagemNaView(String textoMensagem) {
         this.appiumRobot.validaExistenciaTextoNaView(textoMensagem);
+    }
+
+
+    @E("^preencho os dados de login \"([^\"]*)\", \"([^\"]*)\"$")
+    public void preenchoOsDadosDeLogin(String email, String senha) {
+        this.seuBarrigaHibridoFuncionalidade.preencherCampoEmail(email);
+        this.seuBarrigaHibridoFuncionalidade.preencherCampoSenha(senha);
     }
 }

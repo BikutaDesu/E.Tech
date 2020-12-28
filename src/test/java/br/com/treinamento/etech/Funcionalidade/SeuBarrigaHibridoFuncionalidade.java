@@ -1,7 +1,6 @@
 package br.com.treinamento.etech.Funcionalidade;
 
 import br.com.treinamento.etech.Pages.SeuBarrigaHibridoPage;
-import br.com.treinamento.etech.commons.AppiumRobot;
 import br.com.treinamento.etech.commons.BaseTest;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
@@ -29,6 +28,11 @@ public class SeuBarrigaHibridoFuncionalidade extends BaseTest {
     public void tocarBotaoNovoUsuario() {
         driverWait.until(ExpectedConditions.visibilityOf(this.seuBarrigaHibridoPage.getBtnNovoUsuario()));
         this.seuBarrigaHibridoPage.getBtnNovoUsuario().click();
+    }
+
+    public void tocarBotaoLogin() {
+        driverWait.until(ExpectedConditions.visibilityOf(this.seuBarrigaHibridoPage.getBtnNovoUsuario()));
+        this.seuBarrigaHibridoPage.getBtnLogin().click();
     }
 
 }

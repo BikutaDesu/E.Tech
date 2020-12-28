@@ -15,6 +15,9 @@ public class SeuBarrigaHibridoPage {
     @AndroidFindBy(xpath = "//android.view.View[@text='Novo usuário?']")
     private MobileElement btnNovoUsuario;
 
+    @AndroidFindBy(xpath = "//android.view.View[@text='Login']")
+    private MobileElement btnLogin;
+
     @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='nome']")
     private MobileElement txtNome;
 
@@ -37,6 +40,8 @@ public class SeuBarrigaHibridoPage {
     }
 
     public MobileElement getBtnNovoUsuario() { return btnNovoUsuario; }
+
+    public MobileElement getBtnLogin() { return btnLogin; }
 
 
 }
