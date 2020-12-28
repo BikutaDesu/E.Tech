@@ -3,7 +3,6 @@ package br.com.treinamento.etech.steps;
 import br.com.treinamento.etech.Funcionalidade.SeuBarrigaHibridoFuncionalidade;
 import br.com.treinamento.etech.commons.AppiumRobot;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.pt.E;
 import cucumber.api.java.pt.Entao;
 
@@ -43,7 +42,6 @@ public class SeuBarrigaHibridoSteps {
     public void visualizoAMensagemNaView(String textoMensagem) {
         this.appiumRobot.validaExistenciaTextoNaView(textoMensagem);
     }
-
 
     @E("^preencho os dados de login \"([^\"]*)\", \"([^\"]*)\"$")
     public void preenchoOsDadosDeLogin(String email, String senha) {
