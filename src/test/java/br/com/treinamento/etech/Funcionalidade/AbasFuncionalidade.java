@@ -12,11 +12,11 @@ public class AbasFuncionalidade extends BaseTest {
     }
 
     public void arrastarTelaParaDireita() {
-        appiumRobot.swipeHorizontal(1, 100, 900);
+        appiumRobot.swipeTela(1, 100, 900, 500, 500);
     }
 
     public void arrastarTelaParaEsquerda() {
-        appiumRobot.swipeHorizontal(1, 900, 100);
+        appiumRobot.swipeTela(1, 900, 100, 500, 500);
     }
 
 }
